@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(204, 204, 204);
+  }
+  
+  .form-container {
+    background-color: yellow;
+    box-sizing: border-box;
+    -webkit-box-shadow: 5px 5px 20px 7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 20px 7px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 20px 7px rgba(0, 0, 0, 0.75);
+    width: 30%;
+    text-align: center;
+    padding: 60px 20px 10px 20px;
+    border-radius: 5px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .form-container input {
+    display: block;
+    padding: 5px;
+    margin: auto;
+    width: 50%;
+  }
+  
+  .btn-container{
+      text-align: center;
+  }
+  
+  .btn-container button {
+    width: fit-content;
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin-top: 20px;
+    padding: 5px 10px;
+    margin-bottom: 40px;
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .form-container {
+      position: fixed;
+      width: 85%;
+      padding: 100px 20px 10px 20px;
+    }
+    .form-container input {
+      width: 80%;
+      padding: 10px;
+    }
+    .btn-container button {
+      width: 60%;
+      margin-top: 3rem;
+      padding: 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .form-container {
+      position: fixed;
+      width: 55%;
+      padding: 100px 20px 10px 20px;
+    }
+    .form-container input {
+      width: 75%;
+      padding: 10px;
+    }
+    .btn-container button {
+      width: 45%;
+      margin-top: 3rem;
+      padding: 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .form-container {
+      position: fixed;
+      width: 70%;
+      padding: 100px 20px 10px 20px;
+    }
+    .form-container input {
+      width: 75%;
+      padding: 10px;
+    }
+    .btn-container button {
+      width: 50%;
+      margin-top: 3rem;
+      padding: 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .form-container {
+      position: fixed;
+      width: 70%;
+      padding: 100px 20px 10px 20px;
+    }
+    .form-container input {
+      width: 65%;
+      padding: 10px;
+    }
+    .btn-container button {
+      width: 45%;
+      margin-top: 3rem;
+      padding: 10px;
+    }
+  }
+  
+  
+  @media only screen and (min-width: 1201px) {
+    .form-container {
+      position: fixed;
+      width: 60%;
+      padding: 100px 20px 10px 20px;
+    }
+    .form-container input {
+      width: 60%;
+      padding: 10px;
+    }
+    .btn-container button {
+      width: 40%;
+      margin-top: 3rem;
+      padding: 10px;
+    }
+  }

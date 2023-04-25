@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Resume</title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+
+<body>
+    <div class="flex-container">
+
+        <div class="flex-item">
+            <button id="prev" onclick="prev()">Previous</button>
+        </div>
+
+        <div class="flex-item">
+            <input type="search" id="search" placeholder="search for keywords to filter the result" onchange="search()">
+        </div>
+
+        <div class="flex-item">
+            <button id="next" onclick="next()">Next</button>
+
+        </div>
+    </div>
+
+    <div class="container" id="resume">
+        <div class="header">
+            <h2 id="name">John Doe</h2>
+            <h3 id="applied-position">Applied For: <span id="john-position">Software Engineer</span></h3>
+            <img src="./person.png">
+        </div>
+
+        <div class="resume-container">
+
+            <div class="side">
+                <section id="personal-info">
+                    <h2>Personal Information</h2>
+                    <ul>
+                        <li><span id="phone">9999999999</span></li>
+                        <li><span id="email">john@gmail.com</span></li>
+                        <li><a href="https://linkedin.com/john" target="_blank" id="linkedIn">LinkedIn</a></li>
+                    </ul>
+
+                    <h2>Technical Skills</h2>
+                    <ul>
+                        <li><span id="ts-1">HTML</span></li>
+                        <li><span id="ts-2">CSS</span></li>
+                        <li><span id="ts-3">JavaScript</span></li>
+                    </ul>
+
+                    <h2>Hobbies</h2>
+                    <ul>
+                        <li><span id="hobby-1">Writing</span></li>
+                        <li><span id="hobby-2">Singing</span></li>
+                        <li><span id="hobby-3">Travelling</span></li>
+                    </ul>
+
+                </section>
+
+            </div>
+
+            <div class="resume-body">
+                <section id="work-experience">
+                    <h2>Work Experience in Previous Company</h2>
+                    <p><b>Company Name : </b><span id="company-name">Jake</span></p>
+                    <p><b>Position : </b><span id="position"> Software Developer</span></p>
+                    <p><b>Start Date : </b><span id="start-date">2019-01-01</span></p>
+                    <p><b>End Date : </b><span id="end-date">2021-01-01</span></p>
+                    <p><b>Summary : </b><span id="summary">Associate engineer with development, testing verification and
+                            validation experience on Website
+                            UI display systems.</span></p>
+                </section>
+
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <p><b><span id="project-name">Diabetic Retinopaty</b></span><span id="project-desc">created a GUI
+                            using QT designer which will take image of retina as input, input image will be processed
+                            and compare with the images present in database and then classified as one of DR stage or
+                            normal.OpenCV and image processing concepts are used. survey paper on this project is
+                            publish in 2nd international conference on Topical Transcend in Science, Technology &
+                            Management
+                    </p>
+                    </span>
+                </section>
+
+                <section id="education">
+                    <h2>Education</h2>
+                    <ul>
+                        <li><b>UG: </b><span id="ug-institute">Abc Institute of Technology;</span>
+                            <span id="ug-course">B.C.A</span>
+                            <span id="ug-start-date">2016-01-01,</span>
+                            <span id="ug-end-date">2017-01-01,</span>
+                            <span id="ug-cgpa">8.7</span>
+                        </li>
+
+                        <li><b>PG: </b><span id="pg-institute">Abc</span>
+                            <span id="pg-cgpa">8.7</span>
+                        </li>
+
+                        <li><b>High School: </b><span id="high-school">Xyz</span>
+                            <span id="high-school-cgpa">8.7</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="internship">
+                    <h2>Internship</h2>
+                    <ul>
+                        <li><b>Company Name: </b><span id="internship-company-name">Infosys</span></li>
+                        <li><b>Position: </b><span id="internship-position">intern</span></li>
+                        <li><b>Start Date: </b><span id="internship-start-date">2017-01-01</span></li>
+                        <li><b>End Date: </b><span id="internship-end-date">2018-01-01</span></li>
+                        <li><b>Summary: </b><span id="internship-summary">Learned about Tools used for website testing
+                                such as Deep Travel, NVDA, web developer extension, OpenVAS,Learned about the importance
+                                and concept of OWASP.Learned React JS and worked for Frontend development with
+                                professional.</span></li>
+                    </ul>
+                </section>
+
+                <section id="achievements">
+                    <h2>Achievements</h2>
+                    <li><span id="achievements-summary">Attended 5 days industry orientation workshop organized by free
+                            software movement</span></li>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div id="error" class="flex-container-error none">
+        <div class="flex-item-error">
+            <img src="./smiley.png">
+        </div>
+        <div class="flex-item-error">
+            <p>No such results found</p>
+        </div>
+    </div>
+
+    <script src="./resume.js"></script>
+
+</body>
+
+</html>
